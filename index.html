@@ -1,45 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Sites</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/assets/css/style.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=PT+Serif&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Sparrow Sites</title>
 
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
 </head>
-
 <body>
-    <header>
-        <nav class="topnav">
-            <ul>
-                <li><a id="redirpage" href="#" class="title">Sparrow Sites</a></li>
-            </ul>
-        </nav>
-    </header>
-    <div class="welcome">
-        <div class= "welcomecontent">
-            <h1 id="welcome">Welcome to Sparrow Sites!</h1>
-        </div>
-    </div>
-    <div class="siteitems">
-        <div class=site-content>
-            <div class="site-item" data-url="/churchpad">
-                <img src="/assets/img/monitor.svg" class="site-image">
-                <br>
-                <p class="site-text">Church Pads</p>
-            </div>
-        </div>
-    </div>
-    <footer style="margin: 1%;">
-        <p>&copy 2025 Sparrow001</p>
-    </footer>
-    <script src="/assets/js/index.js"></script>
+
+<header>
+  <div class="brand">Sparrow Sites</div>
+  <div class="subtitle">A collection of some things I’ve built</div>
+</header>
+
+<main>
+  <div class="site-grid">
+    <button class="site-btn" onclick="location.href='/churchpad'">
+      <div class="icon">⛪</div>
+      <div class="site-text">
+        <div class="site-title">Church Pads</div>
+        <div class="site-desc">Tablet-based church notes</div>
+      </div>
+    </button>
+
+    <button class="site-btn" onclick="location.href='/escaperoom'">
+      <div class="icon">🧩</div>
+      <div class="site-text">
+        <div class="site-title">Escape Room</div>
+        <div class="site-desc">STEMENJ 1/12</div>
+      </div>
+    </button>
+
+  </div>
+</main>
+
+<footer>
+  © 2026 Sparrow001
+</footer>
+
+<script>
+  function togglePanel() {
+    document.getElementById('panel').classList.toggle('open');
+  }
+</script>
+
 </body>
 </html>
